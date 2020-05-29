@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4 - Jarryd Patel</title>
+</head>
+<body>
+    <center>
+     <script>
+     function calcsqrt(form) 
+    {
+        var number=form.number.value;
+        var ans=Math.sqrt(number);
+        if (number<0) ans="Invalid";
+        form.sqrt.value=ans;
+    }
+     </script>
+        <table width="40%" border="1" >
+    <tr>
+    <td align="center" ><h3> Square Root Calculator</h3>
+    <form action="#" method="get" name="form">
+     <font size="4" >Enter a value </font><input name="number" type="text" class="regfont" size="6"/>
+     <br /><br /><input type="button" onclick="calcsqrt(this.form)" value="Calculate"/>
+     <br /><br /><font> 
+                     The Square Root Value is: <input name="sqrt" type="text" class="regfont" size="10"/><br /><br />
+    </form>
+    </td>
+    </tr>
+    </table>
+     </center>
+     </body>
+</html>
